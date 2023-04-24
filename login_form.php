@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
-<body>
-<form action="login.php" method="post">
-        <label for="name">whats yo name?</label>
-        <input type="text" name="name" id="name">
 
-        <label for="pwd">hope u remember thiss</label>
-        <input type="text" name="pwd" id="pwd">
+<body class="d-flex h-100 text-center">
 
-        <button type="submit">Super log-in</button>
-    </form>
-    
-    <a href="index.php"><button>Index</button></a>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0"> >w< </h3>
+                        <nav class="nav nav-masthead justify-content-center float-md-end">
+                            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.php">Home</a>
+                        </nav>
+            </div>
+        </header>
+
+        <main class="px-3 d-flex justify-content-center">
+            <form action="login.php" method="post" class="w-25 mt-5 ">
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Username" />
+                    <label for="name">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="pwd" name="pwd" type="password" placeholder="Password" />
+                    <label for="pwd">Password</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label d-block">Are you Hatsune miku?</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="ofCourse" disabled  type="checkbox" name="areYouHatsuneMiku"
+                            data-sb-validations="" />
+                        <label class="form-check-label" for="ofCourse">Of course</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="no" checked="false" type="checkbox" name="areYouHatsuneMiku"
+                            data-sb-validations="" />
+                        <label class="form-check-label" for="no">No</label>
+                    </div>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
 </body>
+
 </html>
