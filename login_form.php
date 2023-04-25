@@ -19,9 +19,9 @@
         <header class="mb-auto">
             <div>
                 <h3 class="float-md-start mb-0"> >w< </h3>
-                        <nav class="nav nav-masthead justify-content-center float-md-end">
-                            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.php">Home</a>
-                        </nav>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.php">Home</a>
+                </nav>
             </div>
         </header>
 
@@ -40,10 +40,10 @@
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" id="ofCourse" disabled  type="checkbox" name="areYouHatsuneMiku"
                             data-sb-validations="" />
-                        <label class="form-check-label" for="ofCourse">Of course</label>
+                        <label class="form-check-label" for="ofCourse">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" id="no" checked="false" type="checkbox" name="areYouHatsuneMiku"
+                        <input class="form-check-input" id="no" type="checkbox" name="areYouHatsuneMiku"
                             data-sb-validations="" />
                         <label class="form-check-label" for="no">No</label>
                     </div>
